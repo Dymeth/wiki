@@ -1,5 +1,9 @@
-import EditLink from './components/EditLink';
 export default {
+  docsRepositoryBase: "https://github.com/FunTimeMC/wiki/edit/main/pages",
+  editLink: {
+    text: "Редактировать на GitHub"
+  },
+
   logo: (
     <span className="ft-logo">
       <span className="ft-logo__main">FUNTIME</span>
@@ -33,9 +37,6 @@ export default {
     </>
   ),
 
-  docsRepositoryBase: "https://github.com/FunTimeMC/wiki/blob/main",
-  editLink: { text: "Предложить правку" },
-
   gitTimestamp: ({ timestamp }) => {
     return (
       <span className="ft-gitstamp">
@@ -53,6 +54,6 @@ export default {
   },
 
   footer: {
-    text: "Сервер © 2025 FunTime.su никак не относится к Mojang, AB."
-  }
+    text: <>Funtime {new Date().getFullYear()} ©</>
+  },
 };
