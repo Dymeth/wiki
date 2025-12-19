@@ -1,22 +1,150 @@
-# [Nextra Docs](https://nextra.vercel.app)
+---
+title: Гайд по форматированию (MDX/Markdown)
+description: Тест всех основных элементов разметки под текущую тему и CSS.
+---
 
-_Warning: this project is not production ready, API might change without notice._
+# Гайд по форматированию (MDX/Markdown)
 
-[![](https://vercel.com/button)](https://vercel.com/import/git?s=https%3A%2F%2Fgithub.com%2Fshuding%2Fnextra&c=1)
-
-**Nextra** is a [Next.js](https://nextjs.org) and [MDX](https://mdxjs.com) powered, no-code site generator.
-
-![](/public/demo.png)
-
-## Development
-
-The code of Nextra is under the [`core`](https://github.com/shuding/nextra/tree/core) branch.
-
-## Themes
-
-- [nextra-theme-docs](https://github.com/vercel/swr-site) ([demo](https://swr.vercel.app))
-- [nextra-theme-blog](https://github.com/shuding/site) ([demo](https://shud.in))
+Эта страница предназначена для проверки отображения **всех основных элементов Markdown/MDX**
+в текущем стеке **Nextra 4.x / Next.js 16 / React 19**.
 
 ---
 
-Created by [@shuding](https://github.com/shuding) and [@pacocoursey](https://github.com/pacocoursey) at [Vercel](https://vercel.com). Released under the MIT license.
+## Заголовки
+
+# H1 — Заголовок первого уровня
+## H2 — Заголовок второго уровня
+### H3 — Заголовок третьего уровня
+#### H4 — Заголовок четвертого уровня
+##### H5 — Заголовок пятого уровня
+###### H6 — Заголовок шестого уровня
+
+---
+
+## Текст и ссылки
+
+Обычный текст.  
+**Жирный**, *курсив*, ***жирный+курсив***, ~~зачёркнутый~~, `inline code`.
+
+Внутренняя ссылка: [Правила](/rules)  
+Внешняя ссылка: [GitHub Wiki](https://github.com/FunTimeMC/wiki)
+
+---
+
+## Списки
+
+### Маркированный список
+
+- Пункт 1
+- Пункт 2
+  - Подпункт 2.1
+  - Подпункт 2.2
+    - Под-подпункт
+
+### Нумерованный список
+
+1. Первый
+2. Второй
+   1. Вложенный
+   2. Вложенный
+3. Третий
+
+### Task list
+
+- [x] Выполнено
+- [ ] Не выполнено
+- [ ] В процессе
+
+---
+
+## Таблицы
+
+| Поле | Тип | Пример | Описание |
+|---|---|---|---|
+| Ник | string | Player123 | Ник игрока |
+| Уровень | number | 42 | Уровень |
+| Онлайн | boolean | true | Статус |
+
+---
+
+## Код
+
+### Bash
+
+```bash
+cd /opt/funtime-wiki
+git pull
+npm ci
+npx next build --webpack
+```
+
+### JSON
+
+```json
+{
+  "name": "funtime-wiki",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build"
+  }
+}
+```
+
+---
+
+## Цитаты
+
+> Это пример цитаты.
+> Вторая строка цитаты.
+
+> **Важно:** используется для заметок и предупреждений.
+
+---
+
+## Изображения
+
+![Пример изображения](https://i.ytimg.com/vi/lsgS74iJYLc/hq720.jpg)
+
+---
+
+## HTML внутри MDX
+
+<div style={{ padding: "12px", border: "1px solid rgba(255,255,255,.15)", borderRadius: "12px" }}>
+  <strong>HTML-блок</strong><br />
+  Проверка кастомной вёрстки внутри MDX.
+</div>
+
+---
+
+## Spoiler / details
+
+<details>
+  <summary><strong>Открыть спойлер</strong></summary>
+
+  Внутри можно использовать Markdown:
+
+  - список
+  - список
+
+  ```bash
+  echo "hello"
+  ```
+</details>
+
+---
+
+## Спецсимволы
+
+`# % & * _ ~ \`  
+Экранирование: \*не курсив\*
+
+---
+
+## Чеклист
+
+- Заголовки читаемы
+- Код оформлен корректно
+- Таблицы выглядят аккуратно
+- Списки не ломаются
+- HTML-блоки работают
