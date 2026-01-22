@@ -4,7 +4,7 @@
   "rules": "Правила сервера",
   "auction": "Аукцион",
   "block_damager": "Блок Дамагер",
-  "block_сhunk_loader": "Блок Прогрузчик чанков",
+  "block_chunk_loader": "Блок Прогрузчик чанков",
   "buffs": "Зелья",
   "buyer": "Скупщик",
   "cases": "Кейсы",
